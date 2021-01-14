@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_122440) do
+ActiveRecord::Schema.define(version: 2021_01_14_102017) do
+
+  create_table "restaurants", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "yelps", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
